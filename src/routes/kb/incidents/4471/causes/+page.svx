@@ -4,7 +4,7 @@ title: '#4471 · two causes in one ticket'
 owner: Jakub Pięta
 status: open
 reviewed: 2026-10-30
-signature: Jakub Pięta
+signature: "v1.eyJzdWIiOiIzMTQwIiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTMzNTExNTksImV4cCI6MTc5MzQzNzU1OX0.oWEbmy5rKL7A8kuh-fBQ2tlHJkE55Lga5wvuyXX9XYQ"
 ---
 
 <script>
