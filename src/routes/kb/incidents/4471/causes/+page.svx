@@ -1,0 +1,34 @@
+---
+layout: runbook
+title: '#4471 · two causes in one ticket'
+owner: Jakub Pięta
+status: open
+reviewed: 2026-10-30
+signature: Jakub Pięta
+---
+
+<script>
+  import Callout from '#lib/kb/Callout.svelte';
+  import CauseTable from '#lib/kb/CauseTable.svelte';
+  import RenderStamp from '#lib/kb/RenderStamp.svelte';
+</script>
+
+#4471 is marked known, as one parser bug: the shared parser reads dates month first, and these tenants write the day first. The cause table groups the merged reports by tenant and channel. Two causes are in this ticket. The smaller one has no ticket of its own.
+
+<Callout kind="warn">
+The ticket is marked known. The table shows two causes.
+</Callout>
+
+## The two causes
+
+`parser`. The shared parser reads every date month first. A day-first tenant's dates come out flipped. That is the app, email, and a form whose hint already says DD/MM/YYYY.
+
+`hint`. booking-v3 prints MM/DD/YYYY under the date field. People type what the hint says, and the form reads the date the tenant's way, day first. Form channel only.
+
+Intake's tag is a guess from the browser at the moment the report arrived. The cause follows the tenant.
+
+A few reports were read as a one-day move. They stay in the count of the cause they are filed under. The table footnotes them.
+
+<CauseTable ticket={4471} />
+
+<RenderStamp {signature} />
