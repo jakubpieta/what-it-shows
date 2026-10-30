@@ -2,7 +2,7 @@
 layout: runbook
 title: '#4471 · two causes in one ticket'
 owner: Jakub Pięta
-status: open
+status: closed
 reviewed: 2026-10-30
 signature: "v1.eyJzdWIiOiIzMTQwIiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTMzNTExNTksImV4cCI6MTc5MzQzNzU1OX0.oWEbmy5rKL7A8kuh-fBQ2tlHJkE55Lga5wvuyXX9XYQ"
 ---
@@ -30,5 +30,13 @@ Intake's tag is a guess from the browser at the moment the report arrived. The c
 A few reports were read as a one-day move. They stay in the count of the cause they are filed under. The table footnotes them.
 
 <CauseTable ticket={4471} />
+
+## Engineering, 5 Oct
+
+#4471 closed.
+
+`parser` fixed. `fix(dates): parse dd/mm for eu locales`
+
+`hint` won't fix. booking-v3 form retired.
 
 <RenderStamp {signature} />
